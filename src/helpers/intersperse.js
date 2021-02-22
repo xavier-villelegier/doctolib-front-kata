@@ -9,6 +9,7 @@ import { cloneElement } from 'react'
  *
  */
 const intersperse = (array, separator) => {
+  if (!array.length) return array
   array = array.filter(Boolean)
   return array.reduce((output, item, index) => {
     output.push(item)

@@ -1,0 +1,88 @@
+@import '../const/variables.scss';
+@import '../const/colors.scss';
+
+$checkbox-size: 16px;
+$checkbox-icon-size: 14px; // allow correct placement with 1px border
+
+.dl-checkbox {
+  display: inline-block;
+  box-sizing: border-box;
+  height: $checkbox-size;
+  width: $checkbox-size;
+  border-radius: $border-radius-default;
+  border: 1px solid $color-gray-light;
+  background-color: $color-white;
+  transition: background-color 100ms, border-color 100ms;
+}
+
+.dl-checkbox-error {
+  border-color: $color-red;
+}
+
+.dl-checkbox-disabled {
+  background-color: $color-gray-lighter;
+}
+
+.dl-checkbox-icon {
+  fill: $color-white;
+  width: $checkbox-icon-size;
+  height: $checkbox-icon-size;
+  pointer-events: none;
+  display: none;
+}
+
+input[type='checkbox'].dl-checkbox-control {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  width: $checkbox-size;
+  height: $checkbox-size;
+  cursor: pointer;
+
+  &[disabled] {
+    cursor: unset;
+  }
+
+  &:hover ~ .dl-checkbox:not(.dl-checkbox-error):not(.dl-checkbox-disabled) {
+    border-color: $color-gray;
+  }
+
+  &:hover ~ .dl-checkbox-error {
+    border-color: $color-red-dark;
+  }
+
+  &:checked ~ .dl-checkbox {
+    background-color: $color-blue;
+    border-color: transparent;
+
+    .dl-checkbox-icon {
+      display: block;
+    }
+  }
+
+  &:checked:hover ~ .dl-checkbox {
+    background-color: $color-blue-dark;
+    border-color: transparent !important;
+  }
+
+  &:focus ~ .dl-checkbox {
+    box-shadow: 0 0 0 4px $color-blue-light;
+  }
+
+  &:checked ~ .dl-checkbox-error {
+    background-color: $color-red;
+  }
+
+  &:checked:hover ~ .dl-checkbox-error {
+    background-color: $color-red-dark;
+  }
+
+  &:checked ~ .dl-checkbox-disabled {
+    background-color: $color-gray-light;
+  }
+
+  &:checked:hover ~ .dl-checkbox-disabled {
+    background-color: $color-gray-light;
+  }
+}

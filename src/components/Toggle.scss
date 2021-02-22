@@ -1,0 +1,103 @@
+@import '../const/variables.scss';
+
+$toggle-wrapper-width: $grid-unit * 6;
+$toggle-wrapper-height: $grid-unit * 3;
+
+input[type='checkbox'].dl-toggle-control {
+  opacity: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $toggle-wrapper-width;
+  height: $toggle-wrapper-height;
+  cursor: pointer;
+}
+
+.toggle-label-wrapper {
+  cursor: default;
+
+  &:not([disabled]) {
+    cursor: pointer;
+  }
+
+  &:not([disabled]):hover {
+    .toggle-slider {
+      background-color: $color-gray-dark;
+    }
+
+    input:checked + .toggle-slider {
+      background-color: $color-blue-dark;
+    }
+  }
+
+  &[disabled] {
+    .dl-toggle-label {
+      color: $color-gray;
+    }
+
+    .toggle-slider {
+      background-color: $color-gray-light;
+
+      &:before {
+        background-color: $color-gray-lighter;
+      }
+    }
+  }
+}
+
+.toggle-slider {
+  background-color: $color-gray;
+  transition: 100ms;
+  border-radius: 34px;
+  width: $toggle-wrapper-width;
+  height: $toggle-wrapper-height;
+
+  &:before {
+    position: absolute;
+    content: '';
+    height: $grid-unit * 2;
+    width: $grid-unit * 2;
+    left: 4px;
+    bottom: 4px;
+    background-color: $color-white;
+    border-radius: 50%;
+    transition: transform 100ms ease-in-out;
+    pointer-events: none;
+  }
+}
+
+.input-hint-wrapper {
+  max-width: calc(100% - #{$toggle-wrapper-width} - #{$modal-icon-size} - #{$grid-unit});
+}
+
+.input-hint {
+  margin-bottom: 0;
+  padding-left: ($grid-unit * 2);
+  padding-right: $grid-unit;
+}
+
+.overlay-trigger-icon {
+  min-width: $modal-icon-size;
+  height: $modal-icon-size;
+}
+
+.toggle {
+  user-select: none;
+  height: $grid-unit * 3;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+
+  input:checked:not([disabled]) + .toggle-slider {
+    background-color: $color-blue;
+  }
+
+  input:focus + .toggle-slider {
+    box-shadow: 0 0 0 4px $color-blue-light;
+  }
+}
+
+input:checked + .toggle-slider:before {
+  transform: translateX($grid-unit * 3);
+}

@@ -1,0 +1,10 @@
+@import '../const/variables.scss';
+@import '../const/colors.scss';
+
+.dl-badge {
+  display: inline-block;
+  text-align: center;
+  padding: 0 12px;
+  border-radius: 20px;
+  background-color: $color-gray-lighter;
+}

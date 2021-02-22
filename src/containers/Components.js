@@ -1,6 +1,9 @@
 import Avatar from '../components/Avatar'
+import Badge from '../components/Badge'
 import Card from '../components/Card'
+import Checkbox from '../components/Checkbox'
 import Text from '../components/Text'
+import Toggle from '../components/Toggle'
 
 import intersperse from '../helpers/intersperse'
 
@@ -35,10 +38,20 @@ const Components = () => (
       </ExamplesWrapper>
     </Card>
     <Card title="Checkbox">
-      <Text uiStyle="title-s-bold">Text</Text>
+      <ExamplesWrapper>
+        <Checkbox />
+        <Checkbox error />
+      </ExamplesWrapper>
     </Card>
-    <Card title="Radio">
-      <Text uiStyle="title-s-bold">Text</Text>
+    <Card title="Toggle">
+      <ExamplesWrapper>
+        <Toggle />
+      </ExamplesWrapper>
+    </Card>
+    <Card title="Badge">
+      <ExamplesWrapper>
+        <Badge>Badge</Badge>
+      </ExamplesWrapper>
     </Card>
   </div>
 )
