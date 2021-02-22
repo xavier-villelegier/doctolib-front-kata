@@ -1,0 +1,39 @@
+@import '../const/variables';
+
+// Styles
+.dl-body-xs-regular {
+  font-family: $font-family-roboto;
+  font-weight: $font-weight-regular;
+  $font-size-smaller: 12px;
+  line-height: $grid-unit * 2;
+}
+
+.dl-text-body-s-regular {
+  font-family: $font-family-roboto;
+  font-weight: $font-weight-regular;
+  $font-size-body: 14px;
+  line-height: $grid-unit * 3;
+}
+
+.dl-text-body-s-bold {
+  font-family: $font-family-roboto;
+  font-weight: $font-weight-bold;
+  $font-size-body: 14px;
+  line-height: $grid-unit * 3;
+}
+
+.dl-text-title-s-bold {
+  font-family: $font-family-montserrat;
+  font-weight: $font-weight-bold;
+  $font-size-body: 14px;
+  line-height: $grid-unit * 3;
+}
+
+// Colors
+.dl-text-gray-darker {
+  color: $color-gray-darker;
+}
+
+.dl-text-gray {
+  color: $color-gray;
+}

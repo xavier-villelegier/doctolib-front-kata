@@ -1,22 +1,17 @@
 import './App.scss'
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import Components from './containers/Components'
 import Playground from './containers/Playground'
+import Menu, { MenuItem } from './components/Menu'
 
 function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/components">Components</Link>
-            </li>
-            <li>
-              <Link to="/playground">Playground</Link>
-            </li>
-          </ul>
-        </nav>
+        <Menu>
+          <MenuItem title="Components" route="/components" />
+          <MenuItem title="Playground" route="/playground" />
+        </Menu>
         <Switch>
           <Route exact path="/">
             <Redirect to="/components" />

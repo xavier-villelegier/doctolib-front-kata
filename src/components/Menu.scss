@@ -1,0 +1,46 @@
+@import '../const/variables.scss';
+@import '../const/colors.scss';
+
+.dl-menu {
+  padding: $grid-unit;
+  position: relative;
+  box-shadow: 0px 3px 8px rgba(100, 100, 100, 0.3);
+}
+
+.dl-logo {
+  width: 100px;
+}
+
+.dl-logo-container {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.dl-menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dl-menu-item {
+  border-radius: $grid-unit;
+  text-decoration: none;
+  padding: $grid-unit * 2;
+  margin: 0 $grid-unit;
+  transition: background 150ms;
+
+  &:hover {
+    background: $color-grey-lighter;
+  }
+
+  &.dl-menu-item-active {
+    background: linear-gradient(180deg, $color-turquoise, $color-blue);
+
+    div {
+      color: white !important;
+      font-weight: bold !important;
+    }
+  }
+}
