@@ -14,38 +14,6 @@ input[type='checkbox'].dl-toggle-control {
   cursor: pointer;
 }
 
-.toggle-label-wrapper {
-  cursor: default;
-
-  &:not([disabled]) {
-    cursor: pointer;
-  }
-
-  &:not([disabled]):hover {
-    .toggle-slider {
-      background-color: $color-gray-dark;
-    }
-
-    input:checked + .toggle-slider {
-      background-color: $color-blue-dark;
-    }
-  }
-
-  &[disabled] {
-    .dl-toggle-label {
-      color: $color-gray;
-    }
-
-    .toggle-slider {
-      background-color: $color-gray-light;
-
-      &:before {
-        background-color: $color-gray-lighter;
-      }
-    }
-  }
-}
-
 .toggle-slider {
   background-color: $color-gray;
   transition: 100ms;
@@ -65,21 +33,6 @@ input[type='checkbox'].dl-toggle-control {
     transition: transform 100ms ease-in-out;
     pointer-events: none;
   }
-}
-
-.input-hint-wrapper {
-  max-width: calc(100% - #{$toggle-wrapper-width} - #{$modal-icon-size} - #{$grid-unit});
-}
-
-.input-hint {
-  margin-bottom: 0;
-  padding-left: ($grid-unit * 2);
-  padding-right: $grid-unit;
-}
-
-.overlay-trigger-icon {
-  min-width: $modal-icon-size;
-  height: $modal-icon-size;
 }
 
 .toggle {
