@@ -1,0 +1,129 @@
+// - Official colors
+
+// -- Neutral
+$color-white: #fff;
+$color-black: #000;
+
+// -- Greys
+// Gray
+$color-gray-lighter: #eef2f6;
+$color-gray-light: #cfd8dc;
+$color-gray: #7791a2;
+$color-gray-dark: #435f71;
+$color-gray-darker: #224358;
+// Grey
+$color-grey-lighter: $color-gray-lighter;
+$color-grey-light: $color-gray-light;
+$color-grey: $color-gray;
+$color-grey-dark: $color-gray-dark;
+$color-grey-darker: $color-gray-darker;
+
+// -- Blue / Primary
+$color-blue-lighter: #f2fafd;
+$color-blue-light: #ccecfa;
+$color-blue: #0596de;
+$color-blue-dark: #11689e;
+$color-blue-darker: #0b4c76;
+
+// -- Turquoise
+$color-turquoise-lighter: #f0fdff;
+$color-turquoise-light: #c7f2f9;
+$color-turquoise: #28b6d3;
+$color-turquoise-dark: #047a97;
+$color-turquoise-darker: #045b76;
+
+// -- Lavender
+$color-lavender-lighter: #f8f8fb;
+$color-lavender-light: #ebebff;
+$color-lavender: #ebebff;
+$color-lavender-dark: #67679d;
+$color-lavender-darker: #494979;
+
+// -- Mandarin
+$color-mandarin-lighter: #fffbed;
+$color-mandarin-light: #fff3cf;
+$color-mandarin: #e29321;
+$color-mandarin-dark: #a65f1b;
+$color-mandarin-darker: #7c4414;
+
+// -- Orange
+$color-orange-lighter: #fef8f4;
+$color-orange-light: #fee0c2;
+$color-orange: #ff7f00;
+$color-orange-dark: #b05700;
+$color-orange-darker: #78380a;
+
+// -- Pink
+$color-pink-lighter: #fff2f3;
+$color-pink-light: #ffdadd;
+$color-pink: #ff6c75;
+$color-pink-dark: #c5353e;
+$color-pink-darker: #961b24;
+
+// -- Red / Danger
+$color-red-lighter: #fef4f5;
+$color-red-light: #fbd3d8;
+$color-red: #e62638;
+$color-red-dark: #ac0e1d;
+$color-red-darker: #7a0c18;
+
+// -- Green / Success
+$color-green-lighter: #f3fff7;
+$color-green-light: #bef2d3;
+$color-green: #17b355;
+$color-green-dark: #04853b;
+$color-green-darker: #1e5b38;
+
+// -- Yellow
+$color-yellow-light: #fffacc;
+$color-yellow: #ffe500;
+$color-yellow-dark: #fdc400;
+
+// -- Warning
+$color-brown-light: #fef8cb;
+$color-brown: #a2800a;
+$color-brown-dark: #91730b;
+
+// -- Purple
+$color-purple-light: #e8e0f8;
+$color-purple: #8a64dd;
+$color-purple-dark: #5218d2;
+
+// - Other colors
+// Do not use these colors, they correspond to very specific use cases
+
+// -- Social Networks
+$color-facebook: #3b5998;
+$color-twitter: #55acee;
+
+// -- Google Map Markers
+$yellow-marker-fill-color: $color-yellow-dark;
+$yellow-marker-stroke-color: darken($yellow-marker-fill-color, 5);
+
+$blue-marker-fill-color: $color-blue;
+$blue-marker-stroke-color: darken($blue-marker-fill-color, 5);
+
+// -- Functional colors
+$telehealth-color: #44f;
+$telehealth-gradient: linear-gradient(to top right, $telehealth-color, $color-turquoise);
+
+$list-view-table-border-color: #ddd;
+
+$left-navbar-hover-color: #1685cb;
+
+// -- bootstrap replacement
+$color-hovered-row-bootstrap: #f5f5f5; //rgba(245, 245, 245, 1)
+
+/* stylelint-disable */
+:export {
+  red: $color-red;
+  blue: $color-blue;
+  blueDark: $color-blue-dark;
+  blueLight: $color-blue-light;
+  lavender: $color-lavender;
+  lavenderDark: $color-lavender-dark;
+  lavenderLight: $color-lavender-light;
+  grayLighter: $color-gray-lighter;
+  grayDarker: $color-gray-darker;
+}
+/* stylelint-enable */
