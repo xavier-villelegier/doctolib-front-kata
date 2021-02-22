@@ -1,33 +1,22 @@
 @import 'colors';
 
-// Following the Styleguide
+// Fonts
 $font-family-roboto: 'Roboto', arial, sans-serif;
 $font-family-montserrat: 'Montserrat', arial, sans-serif;
 $font-family-merriweather: 'Merriweather', arial, sans-serif;
-// Use that font to format the source code.
-$font-family-code: 'Consolas', 'Liberation Mono', menlo, courier, monospace;
-$font-weight-light: 300;
+
+// Font weights
 $font-weight-regular: 400;
-$font-weight-medium: 500;
 $font-weight-bold: 700;
-$font-size-smallest: 10px;
+
+// Font sizes
 $font-size-smaller: 12px;
 $font-size-body: 14px;
-$font-size-bigger: 16px;
 $font-size-big: 18px;
-$font-size-smaller-heading: 20px;
-$font-size-small-heading: 24px;
-$font-size-heading: 26px;
-$font-size-xxl: 32px;
-$font-size-xxxl: 40px;
 
 // This is the unit of the grid used by the Design. Always use a multiple or a factor for any
 // spacing (padding, margin) or width related (width, height).
 $grid-unit: 8px;
-
-// fonts
-$font-body: $font-family-roboto;
-$font-title: $font-family-montserrat;
 
 // Extra small screen / phone
 $screen-xs: 480px;
@@ -59,49 +48,3 @@ $screen-xs-max: $screen-sm-min - 1;
 $screen-sm-max: $screen-md-min - 1;
 $screen-md-max: $screen-lg-min - 1;
 $screen-lg-max: $screen-xl-min - 1;
-
-$border-radius-default: 4px;
-$left-col-width: 210px;
-$minimal-touchable-height: 44px;
-
-// homepage
-$homepage-content-max-width: 1180px;
-$homepage-content-breakpoint: 991px;
-
-// image
-$card-image-size: 44px;
-$icon-size: 20px;
-
-// line-height
-$line-height-unit: 24px;
-$container-max-width: 1100px;
-
-$cta-min-size: 24px;
-
-//header icons
-$header-icon-width: 22px;
-$header-icon-top: 14px;
-$header-icon-left: 10px;
-
-$red-badge-height: 16px;
-
-//top navbar
-$accounts-menu-item-height: 40px;
-
-// panelled modal
-$modal-header-height: 78px;
-$modal-header-icon-size: 32px;
-$modal-icon-size: 16px;
-$modal-max-field-width: 550px;
-$left-panel-width: 336px;
-
-/* stylelint-disable */
-:export {
-  fontFamilyRoboto: $font-family-roboto;
-  fontWeightBold: $font-weight-bold;
-  screenXs: $screen-xs;
-  screenSm: $screen-sm;
-  screenMd: $screen-md;
-  screenLg: $screen-lg;
-}
-/* stylelint-enable */
