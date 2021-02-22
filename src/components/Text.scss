@@ -30,10 +30,23 @@
 }
 
 // Colors
-.dl-text-gray-darker {
+.dl-text-color-gray-darker {
   color: $color-gray-darker;
 }
 
-.dl-text-gray {
+.dl-text-color-gray {
   color: $color-gray;
+}
+
+// Alignment
+.dl-text-align-left {
+  text-align: left;
+}
+
+.dl-text-align-center {
+  text-align: center;
+}
+
+.dl-text-align-right {
+  text-align: right;
 }

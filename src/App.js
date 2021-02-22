@@ -12,13 +12,15 @@ function App() {
           <MenuItem title="Components" route="/components" />
           <MenuItem title="Playground" route="/playground" />
         </Menu>
-        <Switch>
-          <Route exact path="/">
-            <Redirect to="/components" />
-          </Route>
-          <Route path="/components" component={Components} />
-          <Route path="/playground" component={Playground} />
-        </Switch>
+        <div className="dl-content">
+          <Switch>
+            <Route exact path="/">
+              <Redirect to="/components" />
+            </Route>
+            <Route path="/components" component={Components} />
+            <Route path="/playground" component={Playground} />
+          </Switch>
+        </div>
       </div>
     </Router>
   )
