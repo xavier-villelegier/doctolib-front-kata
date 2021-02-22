@@ -1,0 +1,62 @@
+@import '../const/variables.scss';
+
+.dl-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.dl-avatar .dl-avatar-circle {
+  border-radius: 50%;
+  text-transform: uppercase;
+  color: $color-white;
+  fill: $color-white;
+  margin-right: $grid-unit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.dl-avatar-xsmall {
+  width: $grid-unit * 3;
+  height: $grid-unit * 3;
+
+  svg {
+    width: 1.5 * $grid-unit;
+    height: 1.5 * $grid-unit;
+  }
+}
+
+.dl-avatar-small {
+  width: $grid-unit * 4;
+  height: $grid-unit * 4;
+
+  svg {
+    width: 2 * $grid-unit;
+    height: 2 * $grid-unit;
+  }
+}
+
+.dl-avatar-medium {
+  width: $grid-unit * 5;
+  height: $grid-unit * 5;
+
+  svg {
+    width: 3 * $grid-unit;
+    height: 3 * $grid-unit;
+  }
+}
+
+.dl-avatar-large {
+  width: $grid-unit * 6;
+  height: $grid-unit * 6;
+
+  svg {
+    width: 4 * $grid-unit;
+    height: 4 * $grid-unit;
+  }
+}
+
+.dl-avatar-color-green {
+  background-color: $color-green;
+}

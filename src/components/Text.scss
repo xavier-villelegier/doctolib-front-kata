@@ -1,31 +1,45 @@
 @import '../const/variables';
 
 // Styles
-.dl-body-xs-regular {
+.dl-text-body-xs-regular {
   font-family: $font-family-roboto;
   font-weight: $font-weight-regular;
-  $font-size-smaller: 12px;
+  font-size: $font-size-smaller;
+  line-height: $grid-unit * 2;
+}
+
+.dl-text-body-xs-bold {
+  font-family: $font-family-roboto;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-smaller;
   line-height: $grid-unit * 2;
 }
 
 .dl-text-body-s-regular {
   font-family: $font-family-roboto;
   font-weight: $font-weight-regular;
-  $font-size-body: 14px;
+  font-size: $font-size-body;
   line-height: $grid-unit * 3;
 }
 
 .dl-text-body-s-bold {
   font-family: $font-family-roboto;
   font-weight: $font-weight-bold;
-  $font-size-body: 14px;
+  font-size: $font-size-body;
   line-height: $grid-unit * 3;
 }
 
 .dl-text-title-s-bold {
   font-family: $font-family-montserrat;
   font-weight: $font-weight-bold;
-  $font-size-body: 14px;
+  font-size: $font-size-body;
+  line-height: $grid-unit * 3;
+}
+
+.dl-text-title-l-bold {
+  font-family: $font-family-montserrat;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-big;
   line-height: $grid-unit * 3;
 }
 
