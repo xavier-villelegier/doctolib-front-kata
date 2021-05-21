@@ -14,7 +14,7 @@ const avatarTextSizes = {
 const Avatar = ({ icon: Icon = UserIcon, text, size = 'medium', src, className }) => (
   <div className={classNames('dl-avatar', className)}>
     {src ? (
-      <img className={classNames('dl-avatar-circle', `dl-avatar-${size}`)} src={src} alt="avatar" />
+      <img className={classNames('dl-avatar-circle', `dl-avatar-${size}`)} src={src} />
     ) : (
       <div className={classNames('dl-avatar-circle', `dl-avatar-${size}`, 'dl-avatar-color-green')}>
         {text ? (

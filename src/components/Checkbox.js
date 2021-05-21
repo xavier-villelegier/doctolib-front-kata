@@ -15,7 +15,6 @@ const Checkbox = ({
   className,
   checked,
   indeterminate,
-  tabIndex,
 }) => (
   <div>
     <input
@@ -25,7 +24,6 @@ const Checkbox = ({
       checked={indeterminate || checked}
       required={required}
       disabled={disabled}
-      tabIndex={tabIndex}
       onBlur={(event) => {
         if (onBlur) {
           onBlur(event)

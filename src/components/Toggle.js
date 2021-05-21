@@ -12,11 +12,11 @@ class Toggle extends PureComponent {
   }
 
   render() {
-    const { className, disabled, id, checked, onChange, name } = this.props
+    const { className, disabled, checked, onChange, name } = this.props
 
     return (
       <div className={classNames('toggle', className)}>
-        <div className="toggle-wrapper" htmlFor={id}>
+        <div className="toggle-wrapper">
           <input
             className="dl-toggle-control"
             type="checkbox"
